@@ -1,0 +1,8 @@
+{
+    "name": "makeweb/makefields-pages",
+    "autoload": {
+        "files": [
+            "src/mb-settings-page.php"
+        ]
+    }
+}
