@@ -2,9 +2,6 @@
     if (defined('ABSPATH')) {
 
         if (!function_exists('mb_settings_page_load')) {
-            /**
-             * Hook to 'init' with priority 5 to make sure all actions are registered before Meta Box 4.9.0 runs
-             */
             add_action('init', 'mb_settings_page_load', 5);
 
             /**

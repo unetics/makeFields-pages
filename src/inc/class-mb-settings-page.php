@@ -50,7 +50,6 @@
          * Normalize settings page arguments.
          *
          * @param array $args Settings page arguments.
-         *
          * @return array
          */
         public function normalize( $args ) {
@@ -130,12 +129,9 @@
 
             // Load action.
             add_action( "load-{$this->page_hook}", array( $this, 'load' ) );
-
         }
 
-        /**
-         * Output the main admin page
-         */
+        /**  Output the main admin page   */
         public function show() {
             $class = 'boxes' === $this->args['style'] ? '' : "rwmb-settings-no-boxes rwmb-settings-{$this->args['style']}";
             ?>
@@ -150,7 +146,6 @@
             <?= $this->args['menu_links']; ?>
             <div class="wrap">
                 <div id="dtb">
-
                     <form method="post" action="" enctype="multipart/form-data" id="post"<?php echo $class ? ' class="' . esc_html( $class ) . '"' : ''; ?>>
                         <div id="poststuff">
                             <?php
@@ -218,8 +213,6 @@
             if ( empty( $this->args['parent'] ) || 'options-general.php' !== $this->args['parent'] ) {
                 add_action( 'admin_notices', array( $this, 'admin_notices' ) );
             }
-
-            // Add help tabs.
             $this->add_help_tabs();
         }
 
@@ -246,9 +239,7 @@
                 }
                 $screen->add_help_tab( $help_tab );
             }
-
         }
-
 
         /**
          * Show tab id of meta box.

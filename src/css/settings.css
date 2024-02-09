@@ -90,7 +90,6 @@
     display: block;
     width: 18px;
     height: 30px;
-    background: url("../../img/ico_docs.svg") no-repeat;
     background-size: 100% auto;
     position: absolute;
     top: 0;
@@ -98,7 +97,6 @@
 }
 
 .foot-links a:last-child:before {
-    background: url("../../img/ico_support.svg") no-repeat;
     top: 1px;
     left: -20px;
     width: 16px;
@@ -293,9 +291,9 @@
 
 #dtb .box-content {
     display: inline-block;
-    width: 55%;
+    width: 100%;
     vertical-align: top;
-    padding: 0 0 0 30px;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -387,7 +385,7 @@
 #dtb div.info h4 {
     font-size: 16px;
     margin: 0;
-    padding: 0 0 15px;
+    padding: 0;
     z-index: 2;
     position: relative;
 }
